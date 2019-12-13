@@ -14,7 +14,6 @@ public class HighScores : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //on game end: PlayerPrefs.SetInt("Score", score);
         //currentScore = PlayerPrefs.GetInt("Score", 0);
         currentScore = 9;
 
