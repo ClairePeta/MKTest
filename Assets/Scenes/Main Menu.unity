@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 851967891}
   m_Layer: 0
   m_Name: Background Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   PlayMenu: {fileID: 858027700}
   SettingsMenu: {fileID: 2109667405}
   MusicButton: {fileID: 998211845}
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 851967892}
 --- !u!1 &998211844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 891762002}
-        m_MethodName: OnBackClick
+        m_MethodName: OnMusicVolumeClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
