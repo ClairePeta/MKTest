@@ -10,9 +10,12 @@ public class Character : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnDuckClick()
     {
-        
+        //make character duck and play animation
+    }
+    public void OnJumpClick()
+    {
+        //make character jump and play animation
     }
 }

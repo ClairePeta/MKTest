@@ -16,20 +16,19 @@ public class HighScores : MonoBehaviour
     {
         //on game end: PlayerPrefs.SetInt("Score", score);
         //currentScore = PlayerPrefs.GetInt("Score", 0);
-        currentScore = 4;
+        currentScore = 9;
 
-        Globals.names[0] = "Chicken";
-        Globals.names[1] = "Wing";
-        Globals.names[2] = "Head";
-        Globals.names[3] = "Leg";
-        Globals.names[4] = "Foot";
+        Globals.names[0] = "a";
+        Globals.names[1] = "b";
+        Globals.names[2] = "c";
+        Globals.names[3] = "d";
+        Globals.names[4] = "e";
 
-        Globals.score[0] = 10;
-        Globals.score[1] = 8;
-        Globals.score[2] = 6;
-        Globals.score[3] = 3;
-        Globals.score[4] = 2;
-
+        Globals.score[0] = 5;
+        Globals.score[1] = 4;
+        Globals.score[2] = 3;
+        Globals.score[3] = 2;
+        Globals.score[4] = 1;
 
         foreach (int score in Globals.score)
         {
@@ -41,6 +40,11 @@ public class HighScores : MonoBehaviour
         }
         scorePosition++;
 
+        foreach (string name in Globals.names)
+        {
+            name.ToLower();
+        }
+
         if (scorePosition < 4)
         {
             for (int i = (Globals.names.Length - 1); i >= scorePosition; i--)
@@ -48,11 +52,12 @@ public class HighScores : MonoBehaviour
                 Globals.names[i] = Globals.names[i - 1];
                 Globals.score[i] = Globals.score[i - 1];
             }
-            
+            Globals.names[scorePosition] = newname.ToUpper();
+            Globals.score[scorePosition] = currentScore;
         }
         if(scorePosition == 4)
         {
-            Globals.names[scorePosition] = newname;
+            Globals.names[scorePosition] = newname.ToUpper();
             Globals.score[scorePosition] = currentScore;
         }
 
