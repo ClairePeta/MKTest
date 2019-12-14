@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Mace : MonoBehaviour
 {
-    float max = 0.5f;
-    float min = -2.5f;
+    public float max = 0.5f;
+    public float min = -2.5f;
 
     private void Update()
     {
