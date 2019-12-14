@@ -6,8 +6,6 @@ public class testing : MonoBehaviour
 
     void Start()
     {
-        
-        Debug.Log("about to mall map manager.init");
         manager.init();
     }
     private void FixedUpdate()

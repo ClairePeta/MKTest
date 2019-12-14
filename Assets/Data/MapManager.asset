@@ -15,8 +15,15 @@ MonoBehaviour:
   sections:
   - {fileID: 918441244707296903, guid: 1b54f0eafbfba004e829a793928ebc5a, type: 3}
   - {fileID: 3565231124602086536, guid: 50c201b8744b5e147b511f6515d03d71, type: 3}
+  - {fileID: 533186800743806263, guid: e0a9066bb8defe84c9a29851495787f0, type: 3}
   startSection: {fileID: 8211823015126841715, guid: ddb76a899692f9a4ea16670371b1ca5d,
     type: 3}
-  activeSections: []
+  activeSections:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   startX: 0
   minConns: 1

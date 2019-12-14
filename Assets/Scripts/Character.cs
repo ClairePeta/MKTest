@@ -31,18 +31,7 @@ public class Character : MonoBehaviour
         }
         if(transform.position.y < (-5))
         {
-            Globals.paused = true;
-            respawnx = transform.position.x;
-            Globals.lives--;
-            if(Globals.lives > 0)
-            {
-                respawnCharacter();
-            }
-            else
-            {
-                Globals.gameScore = score;
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Game Over");
-            }   
+            livesLost();
         }
     }
 
@@ -56,6 +45,22 @@ public class Character : MonoBehaviour
         }
     }
 
+    public void livesLost()
+    {
+        Globals.paused = true;
+        respawnx = transform.position.x;
+        Globals.lives--;
+        if (Globals.lives > 0)
+        {
+            respawnCharacter();
+        }
+        else
+        {
+            Globals.gameScore = score;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Game Over");
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Carrot")
@@ -63,9 +68,10 @@ public class Character : MonoBehaviour
             score++;
             Destroy(other.gameObject);
         }
-        /*
-         if other equals enemy
-         */
+        if (other.gameObject.name == "Mace")
+        {
+            livesLost();
+        }
     }
 
     public void respawnCharacter()
