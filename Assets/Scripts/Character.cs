@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public GameObject countdownCanvas;
     public Rigidbody rb;
     Animator characterAnimator;
     public enum Animation { Walk, Run, Jump, Hit, None }
     public float jumpSpeed = 6f;
     bool jump = false;
     int score = 0;
-
+    float respawnx;
 
     private void Awake()
     {
@@ -28,6 +30,8 @@ public class Character : MonoBehaviour
         }
         if(transform.position.y < (-5))
         {
+            Globals.paused = true;
+            respawnx = transform.position.x;
             Globals.lives--;
             if(Globals.lives > 0)
             {
@@ -100,23 +104,30 @@ public class Character : MonoBehaviour
 
     public void respawnCharacter()
     {
-
-           /* if (ClientLink.Lives > 0)
-            {
-                this.transform.position = new Vector3(respawnPosition.VisualPosition.x, 0.5f, respawnPosition.VisualPosition.z);
-                this.respawnNeeded = false;
-                this._currentBlock = respawnPosition;
-                respawnPosition.CurrentPlayer = this;
-                this.stuck = false;
-            }
-            else
-            {
-                this.transform.position = new Vector3(-50, 0.5f, 0);
-                this.respawnNeeded = false;
-                this._currentBlock = respawnPosition;
-                respawnPosition.CurrentPlayer = this;
-                this.stuck = false;
-            }*/
+        //coroutine here to countdown timer then unpause game
+        this.transform.position = new Vector3(respawnx, 10f, 0f);
+        StartCoroutine(ResumeGame(3));
 
     }
+
+    private IEnumerator ResumeGame(float time)
+    {
+        countdownCanvas.SetActive(true);
+        TextMeshProUGUI text = countdownCanvas.GetComponentInChildren<TextMeshProUGUI>();
+        float elapsedTime = 0;
+
+        while (elapsedTime / time < 1)
+        {
+            int counter = 3 - (int)elapsedTime;
+            text.text = counter.ToString();
+            yield return new WaitForEndOfFrame();
+
+            elapsedTime += Time.deltaTime;
+        }
+        countdownCanvas.SetActive(false);
+        Globals.paused = false;
+        
+        this.transform.position = new Vector3(respawnx, 1.5f, 0f);
+    }
+
 }

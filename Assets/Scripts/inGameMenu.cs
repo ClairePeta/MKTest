@@ -8,6 +8,7 @@ public class inGameMenu : MonoBehaviour
     public GameObject menu;
     public TextMeshProUGUI score;
     public TextMeshProUGUI lives;
+    public GameObject countdownCanvas;
 
     private void Update()
     {
@@ -25,8 +26,9 @@ public class inGameMenu : MonoBehaviour
     public void OnResumeClick()
     {
         menu.SetActive(false);
-        Globals.paused = false;
-        //resume speed/running here
+        StartCoroutine(ResumeGame(3));
+
+
     }
 
     public void OnMainMenuClick()
@@ -36,5 +38,23 @@ public class inGameMenu : MonoBehaviour
     public void OnQuitClick()
     {
         Application.Quit();
+    }
+
+    private IEnumerator ResumeGame(float time)
+    {
+        countdownCanvas.SetActive(true);
+        TextMeshProUGUI text = countdownCanvas.GetComponentInChildren<TextMeshProUGUI>();
+        float elapsedTime = 0;
+
+        while (elapsedTime / time < 1)
+        {
+            int counter = 3 - (int)elapsedTime;
+            text.text = counter.ToString();
+            yield return new WaitForEndOfFrame();
+
+            elapsedTime += Time.deltaTime;
+        }
+        countdownCanvas.SetActive(false);
+        Globals.paused = false;
     }
 }
