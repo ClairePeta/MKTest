@@ -67,47 +67,10 @@ public class Character : MonoBehaviour
          */
     }
 
-    public void StartAnimation(Animation animation, float speed = 1)
-    {
-        switch (animation)
-        {
-            case Animation.Walk:
-                characterAnimator.SetBool("isWalking", true);
-                break;
-            case Animation.Run:
-                characterAnimator.SetBool("isRunning", true);
-                break;
-            case Animation.Jump:
-                characterAnimator.SetTrigger("Jump");
-                break;
-            case Animation.Hit:
-                characterAnimator.SetTrigger("Hit");
-                break;
-            default:
-                break;
-        }
-    }
-
-    public void StopAnimation(Animation animation)
-    {
-        switch (animation)
-        {
-            case Animation.Walk:
-                characterAnimator.SetBool("isWalking", false);
-                break;
-            case Animation.Run:
-                characterAnimator.SetBool("isRunning", false);
-                break;
-        }
-    }
-
-
     public void respawnCharacter()
     {
-        //coroutine here to countdown timer then unpause game
         this.transform.position = new Vector3(respawnx, 10f, 0f);
         StartCoroutine(ResumeGame(3));
-
     }
 
     private IEnumerator ResumeGame(float time)
@@ -129,5 +92,4 @@ public class Character : MonoBehaviour
         
         this.transform.position = new Vector3(respawnx, 1.5f, 0f);
     }
-
 }

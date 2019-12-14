@@ -20,15 +20,12 @@ public class inGameMenu : MonoBehaviour
     {
         menu.SetActive(true);
         Globals.paused = true;
-        //pause the speed/running here
     }
 
     public void OnResumeClick()
     {
         menu.SetActive(false);
         StartCoroutine(ResumeGame(3));
-
-
     }
 
     public void OnMainMenuClick()
