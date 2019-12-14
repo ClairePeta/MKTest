@@ -11,11 +11,9 @@ public class HighScores : MonoBehaviour
     int scorePosition = 20;
     int position = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
-        //currentScore = PlayerPrefs.GetInt("Score", 0);
-        currentScore = 9;
+        currentScore = Globals.gameScore;
 
         Globals.names[0] = "a";
         Globals.names[1] = "b";

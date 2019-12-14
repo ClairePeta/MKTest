@@ -1,5 +1,6 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class MainMenu : MonoBehaviour
 
     public Button MusicButton;
     public AudioSource backgroundMusic;
+    public TMP_InputField playerName;
+    bool nameChanged = false;
 
     private void Awake()
     {
@@ -36,9 +39,18 @@ public class MainMenu : MonoBehaviour
         PlayMenu.SetActive(false);
     }
 
+    public void OnChange_Name()
+    {
+        nameChanged = true;
+    }
+
     public void OnContinueClick()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        if(nameChanged == true && playerName.text != "")
+        {
+            Globals.playerName = playerName.text;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        }
     }
 
     public void OnMusicVolumeClick()

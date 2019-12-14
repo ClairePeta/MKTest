@@ -16,13 +16,15 @@ public class Character : MonoBehaviour
     {
         characterAnimator = GetComponentInChildren<Animator>();
         Globals.lives = 3;
+        Globals.gameScore = score;
     }
 
     void Update()
     {
+        Globals.gameScore = score;
         if (Input.GetKeyDown(KeyCode.D))
         {
-            characterAnimator.Play("Jump");
+            characterAnimator.Play("Jump"); 
         }
         if(transform.position.y < (-5))
         {
@@ -33,7 +35,7 @@ public class Character : MonoBehaviour
             }
             else
             {
-                PlayerPrefs.SetInt("Score", score);
+                Globals.gameScore = score;
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Game Over");
             }   
         }
