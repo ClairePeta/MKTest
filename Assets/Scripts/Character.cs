@@ -94,6 +94,10 @@ public class Character : MonoBehaviour
         {
             livesLost();
         }
+        if (other.gameObject.name == "Saw")
+        {
+            livesLost();
+        }
     }
 
     public void respawnCharacter()
