@@ -1481,7 +1481,7 @@ MonoBehaviour:
   SettingsMenu: {fileID: 2109667405}
   MusicButton: {fileID: 998211845}
   backgroundMusic: {fileID: 851967892}
-  playerName: {fileID: 0}
+  playerName: {fileID: 383571145}
 --- !u!1 &998211844
 GameObject:
   m_ObjectHideFlags: 0
