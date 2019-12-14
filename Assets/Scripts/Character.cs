@@ -59,7 +59,6 @@ public class Character : MonoBehaviour
             targetMesh.localScale = new Vector3(1, 0.5f, 1);
             collide.size = new Vector3(1, 2, 1);
             StartCoroutine(endDuck(1.5f));
-            //rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             duck = false;
         }
     }
@@ -88,6 +87,10 @@ public class Character : MonoBehaviour
             Destroy(other.gameObject);
         }
         if (other.gameObject.name == "Mace")
+        {
+            livesLost();
+        }
+        if (other.gameObject.name == "Spike_Down")
         {
             livesLost();
         }
