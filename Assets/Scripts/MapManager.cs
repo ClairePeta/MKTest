@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "MKTest/Map Manager")]
 public class MapManager : ScriptableObject
 {
     public List<MapSection> sections; //The list of sections to choose from after starting
@@ -8,13 +9,13 @@ public class MapManager : ScriptableObject
     public List<MapSection> activeSections; //The list of sections that have been placed on the map (and not removed)
     MapSection lastSection; //Which map-section was most recently added?
     public float startX; //The x-position of the current start of the track
-    float startXinit = -16.0f;
+    float startXinit = 0f;
     float endX; //The x-position of the current end of the track
     public int minConns = 1;
-    public GameObject player;
 
     public void init()
     {
+        //Debug.Log("start of init function");
         //sections = new List<MapSection>();
         startX = startXinit;
         endX = startX;
@@ -28,7 +29,7 @@ public class MapManager : ScriptableObject
 
     void chooseNextSection()
     {
-        Debug.Log("<b>Choosing next section </b>");
+        //Debug.Log("<b>Choosing next section </b>");
         //First, we determine which sections are valid 
         List<MapSection> validSections = new List<MapSection>();
 
@@ -42,7 +43,7 @@ public class MapManager : ScriptableObject
                 continue;
             }
 
-            Debug.Log("Checking section " + section.name);
+            //Debug.Log("Checking section " + section.name);
 
 
             if (checkSegments(section))
@@ -53,8 +54,8 @@ public class MapManager : ScriptableObject
         }
         //Having generated our list, we choose a random segment from it
         int selectedIndex = Random.Range(0, validSections.Count);
-        Debug.Log("<b>Validmap sections: </b>" + validSections.Count);
-        Debug.Log("<b>Selected section: </b>" + selectedIndex);
+        //Debug.Log("<b>Validmap sections: </b>" + validSections.Count);
+        //Debug.Log("<b>Selected section: </b>" + selectedIndex);
 
         MapSection nextSection = validSections[selectedIndex];
         addSection(nextSection);
@@ -82,12 +83,12 @@ public class MapManager : ScriptableObject
 
     bool checkSegments(MapSection first, MapSection second)
     {
-        Debug.Log("Checking " + first.name + " & " + second.name);
+        //Debug.Log("Checking " + first.name + " & " + second.name);
         int connections = 0;
         //No more than one link section in a row
         if (first.length == 1 && second.length == 1)
         {
-            Debug.Log("Disqualified: repeated link sections");
+            //Debug.Log("Disqualified: repeated link sections");
             return false;
         }
 
@@ -102,7 +103,7 @@ public class MapManager : ScriptableObject
             }
         }
 
-        Debug.Log("Check result: " + (connections >= minConns));
+        //Debug.Log("Check result: " + (connections >= minConns));
 
         return (connections >= minConns);
     }
@@ -121,8 +122,9 @@ public class MapManager : ScriptableObject
     //Check whether it's time to extend the track forward
     void checkForward()
     {
+        //Debug.Log("position of player : " + Globals.playerPositionX);
         //We check if the end of the last section of track is in sight
-        if (endX > player.transform.position.x+10)
+        if (endX < Globals.playerPositionX + 10)
         {
             chooseNextSection();
             checkForward();

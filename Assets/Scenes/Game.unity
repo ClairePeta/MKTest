@@ -943,8 +943,8 @@ GameObject:
   m_Component:
   - component: {fileID: 582765794}
   - component: {fileID: 582765793}
-  - component: {fileID: 582765792}
   - component: {fileID: 582765795}
+  - component: {fileID: 582765792}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2219,10 +2219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1200, y: 800}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3314,6 +3314,7 @@ GameObject:
   - component: {fileID: 2055889693}
   - component: {fileID: 2055889692}
   - component: {fileID: 2055889695}
+  - component: {fileID: 2055889696}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3385,72 +3386,16 @@ MonoBehaviour:
   score: {fileID: 1967785908}
   lives: {fileID: 1078093576}
   countdownCanvas: {fileID: 424284057}
---- !u!1001 &4786560760797978500
-PrefabInstance:
+--- !u!114 &2055889696
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8211823015126841715, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_Name
-      value: StartSection
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616698325762769835, guid: ddb76a899692f9a4ea16670371b1ca5d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ddb76a899692f9a4ea16670371b1ca5d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055889691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6e5b06228176748add7dde08e4d1c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 11400000, guid: 443dfc8136939e745add21e4e2c43c70, type: 2}

@@ -7,4 +7,5 @@
     public static int gameScore;
     public static bool paused = false;
     public static string playerName;
+    public static float playerPositionX;
 }

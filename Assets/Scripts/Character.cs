@@ -9,7 +9,7 @@ public class Character : MonoBehaviour
     public Rigidbody rb;
     Animator characterAnimator;
     public enum Animation { Walk, Run, Jump, Hit, None }
-    public float jumpSpeed = 6f;
+    public float jumpSpeed = 5f;
     bool jump = false;
     int score = 0;
     float respawnx;
@@ -24,6 +24,7 @@ public class Character : MonoBehaviour
     void Update()
     {
         Globals.gameScore = score;
+        Globals.playerPositionX = transform.position.x;
         if (Input.GetKeyDown(KeyCode.D))
         {
             characterAnimator.Play("Jump"); 

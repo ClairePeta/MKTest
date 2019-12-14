@@ -14,4 +14,5 @@ public class GameManager : MonoBehaviour
             transform.Translate(0f * Time.deltaTime, 0f, 0f);
         }
     }
+
 }

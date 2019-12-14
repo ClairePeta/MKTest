@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e1e24ed91306b4f88582b77e2b5be1, type: 3}
+  m_Name: MapManager
+  m_EditorClassIdentifier: 
+  sections:
+  - {fileID: 918441244707296903, guid: 1b54f0eafbfba004e829a793928ebc5a, type: 3}
+  - {fileID: 3565231124602086536, guid: 50c201b8744b5e147b511f6515d03d71, type: 3}
+  startSection: {fileID: 8211823015126841715, guid: ddb76a899692f9a4ea16670371b1ca5d,
+    type: 3}
+  activeSections: []
+  startX: 0
+  minConns: 1
