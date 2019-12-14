@@ -131,15 +131,27 @@ public class MapManager : ScriptableObject
         }
     }
 
+    //Check whether it's time to delete the oldest section of active track
+    void checkBack()
+    {
+        //We check if the end of the first section of track is still in sight
+        float firstSectionEnd = startX + activeSections[0].length; //Get the middle of the end of the first track section
+
+        //If it's not, then we remove it
+        if (firstSectionEnd < Globals.playerPositionX - 10)
+        {
+            startX += activeSections[0].length;
+            activeSections[0].destroySection();
+            activeSections.RemoveAt(0);
+        }
+    }
+
+
     //Checks in both directions for sections needing to be added or removed
     public void checkTrack()
     {
         checkForward();
+        checkBack();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        checkTrack();
-    }
 }

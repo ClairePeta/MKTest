@@ -57,7 +57,8 @@ public class Character : MonoBehaviour
         {
             duck = true;
             targetMesh.localScale = new Vector3(1, 0.5f, 1);
-            collide.size = new Vector3(1, 2, 1);
+            collide.center = new Vector3(0, -0.25f, 0);
+            collide.size = new Vector3(1, 1.5f, 1);
             StartCoroutine(endDuck(1.5f));
             duck = false;
         }
@@ -111,11 +112,13 @@ public class Character : MonoBehaviour
         float elapsedTime = 0;
 
         while (elapsedTime / time < 1)
-        { 
+        {
+            //transform.position = new Vector3(transform.position.x, -3, transform.position.z);
             yield return new WaitForEndOfFrame();
             elapsedTime += Time.deltaTime;
         }
         collide.size = new Vector3(1, 1, 1);
+        collide.center = new Vector3(0, 0, 0);
         targetMesh.localScale = new Vector3(1, 1, 1);
     }
 
