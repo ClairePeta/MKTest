@@ -53,9 +53,10 @@ public class Character : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.Equals("Carrot"))
+        if (other.gameObject.name == "Carrot")
         {
             score++;
+            Destroy(other.gameObject);
         }
         /*
          if other equals enemy
