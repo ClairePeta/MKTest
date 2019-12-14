@@ -10,11 +10,11 @@ public class Mace : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.y == 0.5f)
+        if (transform.position.y == max)
         {
             StartCoroutine(Move(min, 3));
         }
-        if (transform.position.y == -2.5f)
+        if (transform.position.y == min)
         {
             StartCoroutine(Move(max, 3));
         }

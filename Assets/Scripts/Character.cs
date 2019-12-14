@@ -7,12 +7,18 @@ public class Character : MonoBehaviour
 {
     public GameObject countdownCanvas;
     public Rigidbody rb;
+    public BoxCollider collide;
     Animator characterAnimator;
     public enum Animation { Walk, Run, Jump, Hit, None }
     public float jumpSpeed = 5f;
     bool jump = false;
+    bool duck = false;
     int score = 0;
     float respawnx;
+
+    public float OriginalHeight = 1f;
+    public float CrouchHeight = 0.5f;
+    public Transform targetMesh;
 
     private void Awake()
     {
@@ -42,6 +48,19 @@ public class Character : MonoBehaviour
             jump = true;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             jump = false;
+        }
+    }
+
+    public void OnDuckClick()
+    {
+        if (!duck)
+        {
+            duck = true;
+            targetMesh.localScale = new Vector3(1, 0.5f, 1);
+            collide.size = new Vector3(1, 2, 1);
+            StartCoroutine(endDuck(1.5f));
+            //rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
+            duck = false;
         }
     }
 
@@ -78,6 +97,19 @@ public class Character : MonoBehaviour
     {
         this.transform.position = new Vector3(respawnx, 10f, 0f);
         StartCoroutine(ResumeGame(3));
+    }
+
+    private IEnumerator endDuck(float time)
+    {
+        float elapsedTime = 0;
+
+        while (elapsedTime / time < 1)
+        { 
+            yield return new WaitForEndOfFrame();
+            elapsedTime += Time.deltaTime;
+        }
+        collide.size = new Vector3(1, 1, 1);
+        targetMesh.localScale = new Vector3(1, 1, 1);
     }
 
     private IEnumerator ResumeGame(float time)
