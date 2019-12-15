@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -8,6 +6,7 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
+        //makes the camera follow x position of the player as it runs alog the course
         transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
     }
 }

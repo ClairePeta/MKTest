@@ -9,6 +9,7 @@ public class Saw : MonoBehaviour
 
     private void Update()
     {
+        //moves the saw object back and fourth if it reaches its min or max point
         if (transform.position.x == max)
         {
             StartCoroutine(Move(min, 3, -1));
@@ -21,6 +22,7 @@ public class Saw : MonoBehaviour
 
     private IEnumerator Move(float target, float time, float RotationDir)
     {
+        //coroutine to rotate and translate the saw
         float startRotation = transform.eulerAngles.z;
         float endRotation;
         if (RotationDir > 0)
@@ -38,6 +40,7 @@ public class Saw : MonoBehaviour
         float elapsedTime = 0;
         float anglePerSecond = (10 * RotationDir) / time;
 
+        //loops until time is up, rotating and translating the saw object
         while (elapsedTime / time < 1)
         {
             _newPos = Vector3.Lerp(_startPos, _endPos, (elapsedTime / time));

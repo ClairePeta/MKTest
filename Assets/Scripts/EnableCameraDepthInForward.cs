@@ -1,4 +1,5 @@
-﻿// Attach this script to your camera in order to use depth nodes in forward rendering
+﻿//script sent from Kubikos asset make creator
+// Attach this script to your camera in order to use depth nodes in forward rendering
 
 using UnityEngine;
 

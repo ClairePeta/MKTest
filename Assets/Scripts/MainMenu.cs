@@ -47,6 +47,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnContinueClick()
     {
+        //checks to see if a name has been entered, else button does nothing
         if(nameChanged == true && playerName.text != "")
         {
             Globals.playerName = playerName.text;
@@ -56,6 +57,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnMusicVolumeClick()
     {
+        //toggle the background music on or off for the game
         if (Globals.musicVolume == true)
         {
             backgroundMusic.Stop();

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
@@ -27,7 +26,7 @@ public class Character : MonoBehaviour
         Globals.gameScore = score;
         Globals.playerPositionX = transform.position.x;
         Globals.paused = false;
-        //characterAnimator.Play("Run");
+        characterAnimator.Play("Run");
     }
 
     void Update()
@@ -47,8 +46,10 @@ public class Character : MonoBehaviour
 
     public void OnJumpClick()
     {
+        //makes the player jump
         if (!jump)
         {
+            //characterAnimator.Play("Idle");
             jump = true;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
             jump = false;
@@ -57,9 +58,11 @@ public class Character : MonoBehaviour
 
     public void OnDuckClick()
     {
+        //makes the player duck then return to normal size after three seconds
         if (!duck)
         {
             duck = true;
+            //changes the mesh and collider to fit the smaller player
             targetMesh.localScale = new Vector3(1, 0.5f, 1);
             collide.center = new Vector3(0, -0.25f, 0);
             collide.size = new Vector3(1, 1.5f, 1);
@@ -70,6 +73,7 @@ public class Character : MonoBehaviour
 
     public void livesLost()
     {
+        //removes a life then checks if the character needs to be respawned or game over
         Globals.paused = true;
         respawnx = transform.position.x;
         Globals.lives--;
@@ -88,6 +92,7 @@ public class Character : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //checks collided trigger for death or score increment
         if (other.gameObject.name == "Carrot")
         {
             score++;
@@ -109,12 +114,14 @@ public class Character : MonoBehaviour
 
     public void respawnCharacter()
     {
+        //respawns character after canvas countsdown
         this.transform.position = new Vector3(respawnx, 10f, 0f);
         StartCoroutine(ResumeGame(3));
     }
 
     private IEnumerator endDuck(float time)
     {
+        //halfs the player then returns them to normal size
         float elapsedTime = 0;
 
         while (elapsedTime / time < 1)
@@ -131,6 +138,7 @@ public class Character : MonoBehaviour
 
     private IEnumerator ResumeGame(float time)
     {
+        //toggles the countdown times, then resumes the game
         countdownCanvas.SetActive(true);
         TextMeshProUGUI text = countdownCanvas.GetComponentInChildren<TextMeshProUGUI>();
         float elapsedTime = 0;

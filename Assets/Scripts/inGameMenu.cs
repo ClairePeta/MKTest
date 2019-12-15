@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -32,6 +31,7 @@ public class inGameMenu : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main Menu");
     }
+
     public void OnQuitClick()
     {
         Application.Quit();
@@ -43,6 +43,7 @@ public class inGameMenu : MonoBehaviour
         TextMeshProUGUI text = countdownCanvas.GetComponentInChildren<TextMeshProUGUI>();
         float elapsedTime = 0;
 
+        //loops until time is up then toggles the canvas and resumes game
         while (elapsedTime / time < 1)
         {
             int counter = 3 - (int)elapsedTime;
