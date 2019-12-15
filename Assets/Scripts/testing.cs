@@ -4,7 +4,7 @@ public class testing : MonoBehaviour
 {
     public MapManager manager;
 
-    void Start()
+    void Awake()
     {
         manager.init();
     }

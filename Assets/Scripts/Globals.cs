@@ -1,8 +1,8 @@
 ﻿public static class Globals
 {
     public static bool musicVolume = true;
-    public static string[] names = new string[5];
-    public static int[] score = new int[5];
+    public static string[] names = { "a", "b", "c", "d", "e" };
+    public static int[] score = { 5, 4, 3, 2, 1 };
     public static int lives;
     public static int gameScore;
     public static bool paused = false;
