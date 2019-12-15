@@ -5,6 +5,11 @@ public class GameManager : MonoBehaviour
 {
     float speed = 3.0f;
     float counter = 0;
+    private void Awake()
+    {
+        speed = 3.0f;
+    }
+
     void Update()
     {
         if(Globals.paused == false)

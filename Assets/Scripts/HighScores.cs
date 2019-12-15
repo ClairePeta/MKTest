@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HighScores : MonoBehaviour
 {
@@ -21,16 +22,12 @@ public class HighScores : MonoBehaviour
             }
             position++;
         }
-        //scorePosition++;
 
         foreach (string name in Globals.names)
         {
             name.ToLower();
         }
 
-        Debug.Log("Player name from globals " + Globals.playerName);
-        Debug.Log("scoreposition " + scorePosition);
-        Debug.Log("score " + Globals.score);
         if (scorePosition < 4)
         {
             for (int i = (Globals.names.Length - 1); i >= scorePosition; i--)
@@ -53,7 +50,7 @@ public class HighScores : MonoBehaviour
 
     public void OnMainMenuClick()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 
 }

@@ -883,6 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba27a2dd4eb32c488c7d9b2684ba58e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 11400000, guid: 443dfc8136939e745add21e4e2c43c70, type: 2}
   countdownCanvas: {fileID: 424284057}
   rb: {fileID: 582765793}
   collide: {fileID: 582765795}
@@ -1820,6 +1821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pig
       objectReference: {fileID: 0}
+    - target: {fileID: 1155489785018666, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4031941327361638, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1875,6 +1880,46 @@ PrefabInstance:
     - target: {fileID: 4031941327361638, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1320984417246788, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793807469216834, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356154982504270, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195876961606570, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695559455245372, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573662599964250, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524895921828670, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314981464953778, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333074340607240, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209913673751676, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97245c9de92b4b4c918d02c7d88f30d8, type: 3}

@@ -1,6 +1,7 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -49,7 +50,7 @@ public class MainMenu : MonoBehaviour
         if(nameChanged == true && playerName.text != "")
         {
             Globals.playerName = playerName.text;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Game", LoadSceneMode.Single);
         }
     }
 

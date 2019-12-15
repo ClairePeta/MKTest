@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public MapManager manager;
     public GameObject countdownCanvas;
     public Rigidbody rb;
     public BoxCollider collide;
@@ -25,18 +27,21 @@ public class Character : MonoBehaviour
         characterAnimator = GetComponentInChildren<Animator>();
         Globals.lives = 3;
         Globals.gameScore = score;
+        Globals.playerPositionX = transform.position.x;
+        Globals.paused = false;
     }
 
     void Update()
     {
         Globals.gameScore = score;
         Globals.playerPositionX = transform.position.x;
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            characterAnimator.Play("Jump"); 
-        }
+
         if(transform.position.y < (-5))
         {
+            if(Globals.lives < 1)
+            {
+                manager.reset();
+            }
             livesLost();
         }
     }
@@ -75,8 +80,10 @@ public class Character : MonoBehaviour
         }
         else
         {
+            manager.reset();
+            StartCoroutine(endDuck(3));
             Globals.gameScore = score;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Game Over");
+            SceneManager.LoadScene("Game Over", LoadSceneMode.Single);
         }
     }
 

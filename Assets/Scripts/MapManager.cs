@@ -15,8 +15,12 @@ public class MapManager : ScriptableObject
 
     public void init()
     {
-        //Debug.Log("start of init function");
+        Debug.Log("start of init function");
+        Globals.paused = false;
         //sections = new List<MapSection>();
+        startXinit = 0;
+        startX = 0;
+        endX = 0;
         startX = startXinit;
         endX = startX;
 
@@ -25,6 +29,18 @@ public class MapManager : ScriptableObject
         addSection(startSection.GetComponent<MapSection>());
 
         checkForward();
+    }
+
+    public void reset()
+    {
+        for(int i = activeSections.Count-1; i >=0; i--)
+        {
+            activeSections[i].destroySection();
+            activeSections.RemoveAt(i);
+        }
+        startXinit = 0;
+        startX = 0;
+        endX = 0;
     }
 
     void chooseNextSection()

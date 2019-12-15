@@ -82,7 +82,7 @@ Transform:
   m_GameObject: {fileID: 5973866027824144197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.48, y: 2.5, z: 8}
-  m_LocalScale: {x: 0.98, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6772241593608954988}
   m_RootOrder: 7
@@ -204,6 +204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17
@@ -266,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -330,6 +338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -392,6 +404,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -456,6 +472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -518,6 +538,10 @@ PrefabInstance:
     - target: {fileID: 1507556445416078, guid: 35c1760d408159b42a1eb7a1fe581f67, type: 3}
       propertyPath: m_Name
       value: Cloud1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507556445416078, guid: 35c1760d408159b42a1eb7a1fe581f67, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4444016999086382, guid: 35c1760d408159b42a1eb7a1fe581f67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -582,6 +606,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207663812262587929, guid: 72e0e61c1c9071b4a8bc376551ffa8ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7276979722881937064, guid: 72e0e61c1c9071b4a8bc376551ffa8ab,
         type: 3}
@@ -667,6 +696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13
@@ -735,6 +768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292694980968609322, guid: ae27d847526c22544b4bcc96e014e6a1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5292694980969097738, guid: ae27d847526c22544b4bcc96e014e6a1,
         type: 3}
@@ -821,6 +859,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5292694980968609322, guid: ae27d847526c22544b4bcc96e014e6a1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5292694980969097738, guid: ae27d847526c22544b4bcc96e014e6a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -900,6 +943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11
@@ -962,6 +1009,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1026,6 +1077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
@@ -1088,6 +1143,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1152,6 +1211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -1214,6 +1277,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1278,6 +1345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -1340,6 +1411,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1404,6 +1479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9
@@ -1466,6 +1545,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1530,6 +1613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -1592,6 +1679,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1656,6 +1747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -1718,6 +1813,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1782,6 +1881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7
@@ -1844,6 +1947,10 @@ PrefabInstance:
     - target: {fileID: 1719932964490678, guid: 28a9758cf6c921848b46b5fe36122baf, type: 3}
       propertyPath: m_Name
       value: Cloud2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1719932964490678, guid: 28a9758cf6c921848b46b5fe36122baf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4028110577583062, guid: 28a9758cf6c921848b46b5fe36122baf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1913,6 +2020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292694980968609322, guid: ae27d847526c22544b4bcc96e014e6a1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5292694980969097738, guid: ae27d847526c22544b4bcc96e014e6a1,
         type: 3}
@@ -1993,6 +2105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -2055,6 +2171,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2119,6 +2239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -2181,6 +2305,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2245,6 +2373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9
@@ -2307,6 +2439,10 @@ PrefabInstance:
     - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_Name
       value: Cube_RockWGrass_6 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352815572392934, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477563281744182, guid: 609b9bee39961104db2cb12e190ef81d, type: 3}
       propertyPath: m_LocalPosition.x
