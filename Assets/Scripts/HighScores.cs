@@ -22,7 +22,7 @@ public class HighScores : MonoBehaviour
             }
             position++;
         }
-
+        scorePosition++;
         foreach (string name in Globals.names)
         {
             name.ToLower();
@@ -32,9 +32,10 @@ public class HighScores : MonoBehaviour
         {
             for (int i = (Globals.names.Length - 1); i >= scorePosition; i--)
             {
-                Globals.names[i] = Globals.names[i];
-                Globals.score[i] = Globals.score[i];
+                Globals.names[i] = Globals.names[i-1];
+                Globals.score[i] = Globals.score[i-1];
             }
+            scorePosition--;
             Globals.names[scorePosition] = Globals.playerName.ToUpper();
             Globals.score[scorePosition] = currentScore;
         }
