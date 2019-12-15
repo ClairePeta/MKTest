@@ -139,6 +139,6 @@ public class Character : MonoBehaviour
         countdownCanvas.SetActive(false);
         Globals.paused = false;
         
-        this.transform.position = new Vector3(respawnx, 1.5f, 0f);
+        this.transform.position = new Vector3(respawnx, 3f, 0f);
     }
 }
