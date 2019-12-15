@@ -887,6 +887,7 @@ MonoBehaviour:
   countdownCanvas: {fileID: 424284057}
   rb: {fileID: 582765793}
   collide: {fileID: 582765795}
+  characterAnimator: {fileID: 1971895912}
   jumpSpeed: 5
   OriginalHeight: 1
   CrouchHeight: 0.5
@@ -3318,6 +3319,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967785906}
   m_CullTransparentMesh: 0
+--- !u!95 &1971895912 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95101459542396176, guid: 97245c9de92b4b4c918d02c7d88f30d8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1023202127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2055889691
 GameObject:
   m_ObjectHideFlags: 0

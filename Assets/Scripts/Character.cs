@@ -10,8 +10,7 @@ public class Character : MonoBehaviour
     public GameObject countdownCanvas;
     public Rigidbody rb;
     public BoxCollider collide;
-    Animator characterAnimator;
-    public enum Animation { Walk, Run, Jump, Hit, None }
+    public Animator characterAnimator;
     public float jumpSpeed = 5f;
     bool jump = false;
     bool duck = false;
@@ -24,11 +23,11 @@ public class Character : MonoBehaviour
 
     private void Awake()
     {
-        characterAnimator = GetComponentInChildren<Animator>();
         Globals.lives = 3;
         Globals.gameScore = score;
         Globals.playerPositionX = transform.position.x;
         Globals.paused = false;
+        //characterAnimator.Play("Run");
     }
 
     void Update()
@@ -127,6 +126,7 @@ public class Character : MonoBehaviour
         collide.size = new Vector3(1, 1, 1);
         collide.center = new Vector3(0, 0, 0);
         targetMesh.localScale = new Vector3(1, 1, 1);
+        characterAnimator.Play("Run");
     }
 
     private IEnumerator ResumeGame(float time)
@@ -147,5 +147,6 @@ public class Character : MonoBehaviour
         Globals.paused = false;
         
         this.transform.position = new Vector3(respawnx, 3f, 0f);
+        characterAnimator.Play("Run");
     }
 }
